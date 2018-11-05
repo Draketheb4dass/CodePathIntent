@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onSecondActivity(View view) {
         //No permission set, app will crash when using action_dial
-        Intent i = new Intent(Intent.ACTION_CALL);
+        Intent i = new Intent(Intent.ACTION_DIAL);
         i.setData(Uri.parse("tel:+50975647382"));
         startActivity(i);
     }
